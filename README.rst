@@ -25,13 +25,6 @@ CHARacter Matrix.
 Installation
 ------------
 
-For most users, the easiest way is probably to install the latest version
-hosted on PyPI:
-
-.. code-block:: console
-
-    $ pip install pandas-charm
-
 The project is hosted at https://github.com/jmenglund/pandas-charm and 
 can be installed using git:
 
@@ -46,7 +39,8 @@ Running tests
 -------------
 
 After installing the library, you may want to check that everething
-works as expected. Run tests with pytest:
+works as expected. Below is an example of how to run the tests. The packages
+BioPython, DendroPy, pytest, coverage, and pytest-cov need to be installed.
 
 .. code-block:: console
 
