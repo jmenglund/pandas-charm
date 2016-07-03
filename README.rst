@@ -14,6 +14,9 @@ With pandas-charm, you can convert the following objects:
 
 Source repository: `<https://github.com/jmenglund/pandas-charm>`_
 
+.. image:: https://travis-ci.org/jmenglund/pandas-charm.svg?branch=master
+    :target: https://travis-ci.org/jmenglund/pandas-charm
+
 
 The name
 --------
