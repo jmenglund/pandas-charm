@@ -18,7 +18,7 @@ Source repository: `<https://github.com/jmenglund/pandas-charm>`_
 The name
 --------
 
-pandas-charm got its name from the library pandas and an acronym for
+pandas-charm got its name from the library pandas plus an acronym for
 CHARacter Matrix.
 
 
