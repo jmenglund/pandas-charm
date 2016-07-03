@@ -58,7 +58,7 @@ You need to install BioPython and DendroPy manually before you start:
 .. code-block:: console
 
     $ pip install biopython
-    $ pip install dendropy
+    $ pip install dendropy
 
 
 Converting a DendroPy CharacterMatrix to a pandas DataFrame
