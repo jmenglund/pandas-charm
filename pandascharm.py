@@ -110,7 +110,7 @@ def to_bioalignment(frame, alphabet='generic_alphabet'):
             '\'to_bioalignment\' requires BioPython.\n{ex}'.format(ex=str(ex)))
     alignment = MultipleSeqAlignment([])
     bio_alphabet = getattr(Bio.Alphabet, alphabet)
-    for id, seq_series in frame.items():
+    for id, seq_series in frame.iteritems():
         seq_record = SeqRecord(
             Seq(''.join(seq_series), alphabet=bio_alphabet),
             id=id)
