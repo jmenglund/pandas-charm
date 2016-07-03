@@ -10,8 +10,6 @@ branches:
         - master
 
 before_install:
-    - pip install codecov
-    - pip install pytest pytest-cov
     - pip install biopython
     - pip install dendropy
 
