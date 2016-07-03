@@ -1,0 +1,20 @@
+language: python
+
+python:
+    - '2.7'
+    - '3.4'
+
+# whitelist
+branches:
+    only:
+        - master
+
+before_install:
+    - pip install codecov
+    - pip install pytest pytest-cov
+
+script:
+    py.test --cov=pandascharm.py
+
+after_success:
+  - codecov
