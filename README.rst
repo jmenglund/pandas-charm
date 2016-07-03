@@ -17,6 +17,9 @@ Source repository: `<https://github.com/jmenglund/pandas-charm>`_
 .. image:: https://travis-ci.org/jmenglund/pandas-charm.svg?branch=master
     :target: https://travis-ci.org/jmenglund/pandas-charm
 
+.. image:: https://codecov.io/gh/jmenglund/pandas-charm/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/jmenglund/pandas-charm
+
 
 The name
 --------
