@@ -4,7 +4,7 @@ from os.path import join, dirname
 
 setup(
     name='pandas-charm',
-    version=__import__('pandascharm').__version__,
+    version='0.1.0',
     description=(
         'A small Python library for getting character matrices '
         '(alignments) into and out of pandas'),
