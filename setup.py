@@ -1,5 +1,6 @@
 from setuptools import setup, find_packages
 from os.path import join, dirname
+from io import open
 
 
 setup(
