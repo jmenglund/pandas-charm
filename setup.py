@@ -12,7 +12,7 @@ setup(
         join(dirname(__file__), 'README.rst'), encoding='utf-8').read(),
     packages=find_packages(exclude=['docs', 'tests*']),
     py_modules=['pandascharm'],
-    install_requires=['pandas>=0.16', 'numpy', 'dendropy>=4'],
+    install_requires=['pandas>=0.16', 'numpy'],
     extras_require={'test': ['coverage', 'pytest', 'pytest-cov']},
     author='Markus Englund',
     author_email='jan.markus.englund@gmail.com',
