@@ -8,8 +8,8 @@ Use the library to make pandas interoperable with
 
 With pandas-charm, you can convert the following objects:
 
-* BioPython MultipleSeqAlignment to/from pandas DataFrame
-* DendroPy CharacterMatrix to/from pandas DataFrame
+* BioPython MultipleSeqAlignment <-> pandas DataFrame
+* DendroPy CharacterMatrix <-> pandas DataFrame
 
 
 Source repository: `<https://github.com/jmenglund/pandas-charm>`_
@@ -44,7 +44,7 @@ can be installed using git:
 Running tests
 -------------
 
-After installing the library, you may want to check that everething
+After installing the library, you may want to check that everything
 works as expected. Below is an example of how to run the tests. The packages
 BioPython, DendroPy, pytest, coverage, and pytest-cov need to be installed.
 
@@ -57,9 +57,9 @@ BioPython, DendroPy, pytest, coverage, and pytest-cov need to be installed.
 Usage
 -----
 
-Below are a few examples (for Python 3) on how to use the library. 
-Sequences are treated as rows and characters as columns in the DataFrame.
-You need to install BioPython and DendroPy manually before you start:
+Below are a few examples on how to use the library. The examples are written
+for Python 3, but pandas-charm should work also with Python 2.7.
+You need to install BioPython and/or DendroPy manually before you start:
 
 .. code-block:: console
 
