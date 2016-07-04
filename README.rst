@@ -17,7 +17,10 @@ Source repository: `<https://github.com/jmenglund/pandas-charm>`_
     :target: https://travis-ci.org/jmenglund/pandas-charm
 
 .. image:: https://codecov.io/gh/jmenglund/pandas-charm/branch/master/graph/badge.svg
-  :target: https://codecov.io/gh/jmenglund/pandas-charm
+    :target: https://codecov.io/gh/jmenglund/pandas-charm
+
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+    :target: https://opensource.org/licenses/MIT
 
 
 The name
@@ -182,3 +185,9 @@ Converting a pandas DataFrame to a BioPython MultipleSeqAlignment
     TGCAA t2
     TG-AA t3
     
+
+License
+-------
+
+pandas-charm is distributed under 
+`The MIT License<https://opensource.org/licenses/MIT>`_.
