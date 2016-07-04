@@ -30,6 +30,13 @@ CHARacter Matrix.
 Installation
 ------------
 
+For most users, the easiest way is probably to install the latest version 
+hosted on `PyPI <https://pypi.python.org/>`_:
+
+.. code-block:: console
+
+    $ pip install pandas-charm
+
 The project is hosted at https://github.com/jmenglund/pandas-charm and 
 can be installed using git:
 
