@@ -3,7 +3,7 @@ Release checklist
 
 Things to remember when making a new release of pandas-charm.
 
-1.  Changes should be made to the branch named "develop" (a pull request 
+1.  Changes should be made to some branch other than master (a pull request 
     should then be created before making the release).
 
 2.  Update the release (version) numbers in *setup.py* and *pandascharm.py*.
