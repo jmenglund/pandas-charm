@@ -58,7 +58,7 @@ Usage
 -----
 
 Below are a few examples on how to use the library. The examples are written
-for Python 3, but pandas-charm should work also with Python 2.7.
+with Python 3 code, but pandas-charm should work also with Python 2.7.
 You need to install BioPython and/or DendroPy manually before you start:
 
 .. code-block:: console
