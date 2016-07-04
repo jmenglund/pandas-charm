@@ -1,18 +1,6 @@
 pandas-charm
 ============
 
-pandas-charm is a small Python library for getting character matrices
-(alignments) into and out of `pandas <http://pandas.pydata.org>`_.
-Use the library to make pandas interoperable with
-`BioPython <http://biopython.org>`_ and `Dendropy <http://dendropy.org>`_.
-
-With pandas-charm, you can convert the following objects:
-
-* BioPython MultipleSeqAlignment <-> pandas DataFrame
-* DendroPy CharacterMatrix <-> pandas DataFrame
-
-Source repository: `<https://github.com/jmenglund/pandas-charm>`_
-
 .. image:: https://travis-ci.org/jmenglund/pandas-charm.svg?branch=master
     :target: https://travis-ci.org/jmenglund/pandas-charm
 
@@ -21,6 +9,18 @@ Source repository: `<https://github.com/jmenglund/pandas-charm>`_
 
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
     :target: https://opensource.org/licenses/MIT
+
+pandas-charm is a small Python library for getting character matrices
+(alignments) into and out of `pandas <http://pandas.pydata.org>`_.
+Use this library to make pandas interoperable with
+`BioPython <http://biopython.org>`_ and `Dendropy <http://dendropy.org>`_.
+
+With pandas-charm, you can convert the following objects:
+
+* BioPython MultipleSeqAlignment <-> pandas DataFrame
+* DendroPy CharacterMatrix <-> pandas DataFrame
+
+Source repository: `<https://github.com/jmenglund/pandas-charm>`_
 
 
 The name
@@ -54,8 +54,9 @@ Running tests
 -------------
 
 After installing the library, you may want to check that everything
-works as expected. Below is an example of how to run the tests. The packages
-BioPython, DendroPy, pytest, coverage, and pytest-cov need to be installed.
+works as expected. Below is an example of how to run the tests with pytest. 
+The packages BioPython, DendroPy, pytest, coverage, and pytest-cov need 
+to be installed.
 
 .. code-block:: console
 
