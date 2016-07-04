@@ -1,40 +1,51 @@
 pandas-charm
 ============
 
-pandas-charm is a small Python library for getting character matrices
-(alignments) into and out of `pandas <http://pandas.pydata.org>`_.
-Use the library to make pandas interoperable with
-`BioPython <http://biopython.org>`_ and `Dendropy <http://dendropy.org>`_.
-
-With pandas-charm, you can convert the following objects:
-
-* BioPython MultipleSeqAlignment to/from pandas DataFrame
-* DendroPy CharacterMatrix to/from pandas DataFrame
-
-
-Source repository: `<https://github.com/jmenglund/pandas-charm>`_
-
 .. image:: https://travis-ci.org/jmenglund/pandas-charm.svg?branch=master
     :target: https://travis-ci.org/jmenglund/pandas-charm
 
 .. image:: https://codecov.io/gh/jmenglund/pandas-charm/branch/master/graph/badge.svg
-  :target: https://codecov.io/gh/jmenglund/pandas-charm
+    :target: https://codecov.io/gh/jmenglund/pandas-charm
+
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+    :target: https://opensource.org/licenses/MIT
+
+|
+
+pandas-charm is a small Python library for getting character matrices
+(alignments) into and out of `pandas <http://pandas.pydata.org>`_.
+Use this library to make pandas interoperable with
+`BioPython <http://biopython.org>`_ and `Dendropy <http://dendropy.org>`_.
+
+With pandas-charm, you can convert the following objects:
+
+* BioPython MultipleSeqAlignment <-> pandas DataFrame
+* DendroPy CharacterMatrix <-> pandas DataFrame
+
+Source repository: `<https://github.com/jmenglund/pandas-charm>`_
 
 
 The name
 --------
 
-pandas-charm got its name from the library pandas plus an acronym for
+pandas-charm got its name from the pandas library plus an acronym for
 CHARacter Matrix.
 
 
 Installation
 ------------
 
+For most users, the easiest way is probably to install the latest version 
+hosted on `PyPI <https://pypi.python.org/>`_:
+
+.. code-block::
+
+    $ pip install pandas-charm
+
 The project is hosted at https://github.com/jmenglund/pandas-charm and 
 can be installed using git:
 
-.. code-block:: console
+.. code-block::
 
     $ git clone https://github.com/jmenglund/pandas-charm.git
     $ cd pandas-charm
@@ -44,11 +55,12 @@ can be installed using git:
 Running tests
 -------------
 
-After installing the library, you may want to check that everething
-works as expected. Below is an example of how to run the tests. The packages
-BioPython, DendroPy, pytest, coverage, and pytest-cov need to be installed.
+After installing the library, you may want to check that everything
+works as expected. Below is an example of how to run the tests with pytest. 
+The packages BioPython, DendroPy, pytest, coverage, and pytest-cov need 
+to be installed.
 
-.. code-block:: console
+.. code-block::
 
     $ cd pandas-charm
     $ py.test -v --cov-report term-missing --cov pandascharm.py
@@ -57,11 +69,11 @@ BioPython, DendroPy, pytest, coverage, and pytest-cov need to be installed.
 Usage
 -----
 
-Below are a few examples (for Python 3) on how to use the library. 
-Sequences are treated as rows and characters as columns in the DataFrame.
-You need to install BioPython and DendroPy manually before you start:
+Below are a few examples on how to use the library. The examples are written
+with Python 3 code, but pandas-charm should work also with Python 2.7.
+You need to install BioPython and/or DendroPy manually before you start:
 
-.. code-block:: console
+.. code-block::
 
     $ pip install biopython
     $ pip install dendropy
@@ -176,3 +188,9 @@ Converting a pandas DataFrame to a BioPython MultipleSeqAlignment
     TGCAA t2
     TG-AA t3
     
+
+License
+-------
+
+pandas-charm is distributed under 
+`the MIT license <https://opensource.org/licenses/MIT>`_.
