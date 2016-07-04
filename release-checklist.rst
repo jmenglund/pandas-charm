@@ -3,22 +3,24 @@ Release checklist
 
 Things to remember when making a new release of pandas-charm.
 
-1.  Changes should be made to some branch other than master (a pull request 
+#.  Changes should be made to some branch other than master (a pull request 
     should then be created before making the release).
 
-2.  Update the release (version) numbers in *setup.py* and *pandascharm.py*.
+#.  Update the release (version) numbers in *setup.py* and *pandascharm.py*.
 
-3.  Make desirable changes to the code.
+#.  Make desirable changes to the code.
 
-4.  Update the documentation in *README.rst*.
+#.  Check coding style with pep8.
 
-5.  Update *CHANGELOG.rst*.
+#.  Update the documentation in *README.rst*.
 
-6.  Create pull request(s) with changes for the new release.
+#.  Update *CHANGELOG.rst*.
 
-7.  Create the release in GitHub.
+#.  Create pull request(s) with changes for the new release.
 
-8.  Create distributions and upload the files to PyPI.
+#.  Create the release in GitHub.
+
+#.  Create distributions and upload the files to PyPI.
 
     .. code-block:: console
     
