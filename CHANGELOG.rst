@@ -7,3 +7,15 @@ Changelog
 Initial release.
 
 Released 2016-07-04
+
+Includes the following functions:
+
+* frame_as_categorical()
+* frame_as_object()
+* from_bioalignment()
+* from_charmatrix()
+* to_bioalignment()
+* to_charmatrix()
+
+
+

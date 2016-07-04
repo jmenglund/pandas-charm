@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from setuptools import setup, find_packages
 from os.path import join, dirname
 from io import open
@@ -25,7 +28,10 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3'],
-    keywords=['alignment', 'biopython', 'DendroPy', 'pandas'],
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4'
+    ],
+    keywords=['alignment', 'BioPython', 'DendroPy', 'pandas'],
 )
