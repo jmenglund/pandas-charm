@@ -10,6 +10,7 @@ pandas-charm
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
     :target: https://opensource.org/licenses/MIT
 
+
 pandas-charm is a small Python library for getting character matrices
 (alignments) into and out of `pandas <http://pandas.pydata.org>`_.
 Use this library to make pandas interoperable with
