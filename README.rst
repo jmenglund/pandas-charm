@@ -12,12 +12,15 @@ pandas-charm
 
 |
 
-pandas-charm is a small Python library for getting character matrices
-(alignments) into and out of `pandas <http://pandas.pydata.org>`_.
-Use this library to make pandas interoperable with
-`BioPython <http://biopython.org>`_ and `Dendropy <http://dendropy.org>`_.
+pandas-charm is a small Python package (or library) for getting character 
+matrices (alignments) into and out of `pandas <http://pandas.pydata.org>`_.
+The intention of the package is to make pandas interoperable with 
+other scientific packages that can be used for working with character 
+matrices, like for example `BioPython <http://biopython.org>`_ and 
+`Dendropy <http://dendropy.org>`_.
 
-With pandas-charm, you can convert the following objects:
+With pandas-charm, it is currently possible to convert between the 
+following objects:
 
 * BioPython MultipleSeqAlignment <-> pandas DataFrame
 * DendroPy CharacterMatrix <-> pandas DataFrame
@@ -55,7 +58,7 @@ can be installed using git:
 Running tests
 -------------
 
-After installing the library, you may want to check that everything
+After installing the pandas-charm, you may want to check that everything
 works as expected. Below is an example of how to run the tests with pytest. 
 The packages BioPython, DendroPy, pytest, coverage, and pytest-cov need 
 to be installed.
@@ -69,9 +72,10 @@ to be installed.
 Usage
 -----
 
-Below are a few examples on how to use the library. The examples are written
-with Python 3 code, but pandas-charm should work also with Python 2.7.
-You need to install BioPython and/or DendroPy manually before you start:
+Below are a few examples on how to use pandas-charm. The examples are 
+written with Python 3 code, but pandas-charm should work also with 
+Python 2.7. You need to install BioPython and/or DendroPy manually 
+before you start:
 
 .. code-block::
 
@@ -104,7 +108,19 @@ Converting a DendroPy CharacterMatrix to a pandas DataFrame
     2  C  C  -
     3  A  A  A
     4  A  A  A
-    
+
+As seen above, characters are stored as rows and sequences as 
+columns in the DataFrame. If you want rows to hold sequences, 
+it is easy to transpose the matrix in pandas:
+
+.. code-block:: pycon
+
+    >>> df.transpose()
+        0  1  2  3  4
+    t1  T  C  C  A  A
+    t2  T  G  C  A  A
+    t3  T  G  -  A  A
+
 
 Converting a pandas DataFrame to a Dendropy CharacterMatrix
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -132,7 +148,7 @@ Converting a pandas DataFrame to a Dendropy CharacterMatrix
     t1  TCCAA
     t2  TGCAA
     t3  TG-AA
-    
+
 
 Converting a BioPython MultipleSeqAlignment to a pandas DataFrame
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -159,7 +175,7 @@ Converting a BioPython MultipleSeqAlignment to a pandas DataFrame
     2  C  C  -
     3  A  A  A
     4  A  A  A
-    
+
 
 Converting a pandas DataFrame to a BioPython MultipleSeqAlignment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
