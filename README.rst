@@ -11,7 +11,6 @@ With pandas-charm, you can convert the following objects:
 * BioPython MultipleSeqAlignment <-> pandas DataFrame
 * DendroPy CharacterMatrix <-> pandas DataFrame
 
-
 Source repository: `<https://github.com/jmenglund/pandas-charm>`_
 
 .. image:: https://travis-ci.org/jmenglund/pandas-charm.svg?branch=master
@@ -24,7 +23,7 @@ Source repository: `<https://github.com/jmenglund/pandas-charm>`_
 The name
 --------
 
-pandas-charm got its name from the library pandas plus an acronym for
+pandas-charm got its name from the pandas library plus an acronym for
 CHARacter Matrix.
 
 
