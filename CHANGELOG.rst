@@ -6,7 +6,7 @@ Changelog
 
 Initial release.
 
-Released 2016-07-04
+Released 2016-07-05
 
 Includes the following functions:
 
