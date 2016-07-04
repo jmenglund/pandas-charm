@@ -17,5 +17,3 @@ Includes the following functions:
 * to_bioalignment()
 * to_charmatrix()
 
-
-
