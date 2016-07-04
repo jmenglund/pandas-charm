@@ -190,4 +190,4 @@ License
 -------
 
 pandas-charm is distributed under 
-`The MIT License<https://opensource.org/licenses/MIT>`_.
+`The MIT License <https://opensource.org/licenses/MIT>`_.
