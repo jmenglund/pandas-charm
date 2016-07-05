@@ -10,6 +10,9 @@ pandas-charm
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
     :target: https://opensource.org/licenses/MIT
 
+.. image:: https://zenodo.org/badge/23107/jmenglund/pandas-charm.svg
+    :target: https://zenodo.org/badge/latestdoi/23107/jmenglund/pandas-charm
+
 |
 
 pandas-charm is a small Python package (or library) for getting character 
@@ -210,3 +213,17 @@ License
 
 pandas-charm is distributed under 
 `the MIT license <https://opensource.org/licenses/MIT>`_.
+
+
+Citing
+------
+
+If you use results produced with this package in a scientific 
+publication, please just mention the package name in the text and 
+cite the Zenodo DOI of this project:
+
+.. image:: https://zenodo.org/badge/23107/jmenglund/pandas-charm.svg
+    :target: https://zenodo.org/badge/latestdoi/23107/jmenglund/pandas-charm
+
+You can select a citation style from the dropdown menu in the 
+*"Cite as"* section on the Zenodo page.
