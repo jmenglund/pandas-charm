@@ -145,7 +145,7 @@ Converting a pandas DataFrame to a Dendropy CharacterMatrix
     3  A  A  A
     4  A  A  A
     
-    >>> matrix = pc.to_charmatrix(df, type='dna')
+    >>> matrix = pc.to_charmatrix(df, data_type='dna')
     >>> print(matrix.as_string('phylip'))
     3 5
     t1  TCCAA
