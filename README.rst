@@ -31,14 +31,14 @@ Installation
 For most users, the easiest way is probably to install the latest version 
 hosted on `PyPI <https://pypi.python.org/>`_:
 
-.. code-block:: sh
+.. code-block:: bash
 
     $ pip install pandas-charm
 
 The project is hosted at https://github.com/jmenglund/pandas-charm and 
 can be installed using git:
 
-.. code-block:: sh
+.. code-block:: bash
 
     $ git clone https://github.com/jmenglund/pandas-charm.git
     $ cd pandas-charm
@@ -53,7 +53,7 @@ works as expected. Below is an example of how to run the tests with pytest.
 The packages BioPython, DendroPy, pytest, coverage, and pytest-cov need 
 to be installed.
 
-.. code-block:: sh
+.. code-block:: bash
 
     $ cd pandas-charm
     $ py.test -v --cov-report term-missing --cov pandascharm.py
@@ -67,7 +67,7 @@ written with Python 3 code, but pandas-charm should work also with
 Python 2.7. You need to install BioPython and/or DendroPy manually 
 before you start:
 
-.. code-block:: sh
+.. code-block:: bash
 
     $ pip install biopython
     $ pip install dendropy
