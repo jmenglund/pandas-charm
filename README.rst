@@ -85,8 +85,8 @@ before you start:
     $ pip install dendropy
 
 
-Converting a DendroPy CharacterMatrix to a pandas DataFrame
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DendroPy CharacterMatrix to pandas DataFrame
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
 
@@ -124,8 +124,8 @@ it is easy to transpose the matrix in pandas:
     t3  T  G  -  A  A
 
 
-Converting a pandas DataFrame to a Dendropy CharacterMatrix
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pandas DataFrame to Dendropy CharacterMatrix
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
 
@@ -152,8 +152,8 @@ Converting a pandas DataFrame to a Dendropy CharacterMatrix
     t3  TG-AA
 
 
-Converting a BioPython MultipleSeqAlignment to a pandas DataFrame
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BioPython MultipleSeqAlignment to pandas DataFrame
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
 
@@ -179,8 +179,8 @@ Converting a BioPython MultipleSeqAlignment to a pandas DataFrame
     4  A  A  A
 
 
-Converting a pandas DataFrame to a BioPython MultipleSeqAlignment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pandas DataFrame to BioPython MultipleSeqAlignment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
 
