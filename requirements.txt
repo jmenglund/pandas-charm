@@ -1,5 +1,6 @@
 pandas>=0.16
 pytest>=2.8
+pep8
 codecov
 pytest-cov
 DendroPy>=4.0
