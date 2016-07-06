@@ -211,8 +211,8 @@ Converting a pandas DataFrame to a BioPython MultipleSeqAlignment
 License
 -------
 
-pandas-charm is distributed under 
-`the MIT license <https://opensource.org/licenses/MIT>`_.
+pandas-charm is distributed under the 
+`MIT license <https://opensource.org/licenses/MIT>`_.
 
 
 Citing
