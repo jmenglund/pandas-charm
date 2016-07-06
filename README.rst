@@ -44,14 +44,14 @@ Installation
 For most users, the easiest way is probably to install the latest version 
 hosted on `PyPI <https://pypi.python.org/>`_:
 
-.. code-block::
+.. code-block:: sh
 
     $ pip install pandas-charm
 
 The project is hosted at https://github.com/jmenglund/pandas-charm and 
 can be installed using git:
 
-.. code-block::
+.. code-block:: sh
 
     $ git clone https://github.com/jmenglund/pandas-charm.git
     $ cd pandas-charm
@@ -66,7 +66,7 @@ works as expected. Below is an example of how to run the tests with pytest.
 The packages BioPython, DendroPy, pytest, coverage, and pytest-cov need 
 to be installed.
 
-.. code-block::
+.. code-block:: sh
 
     $ cd pandas-charm
     $ py.test -v --cov-report term-missing --cov pandascharm.py
@@ -80,7 +80,7 @@ written with Python 3 code, but pandas-charm should work also with
 Python 2.7. You need to install BioPython and/or DendroPy manually 
 before you start:
 
-.. code-block::
+.. code-block:: sh
 
     $ pip install biopython
     $ pip install dendropy
@@ -89,7 +89,7 @@ before you start:
 Converting a DendroPy CharacterMatrix to a pandas DataFrame
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: pycon
+.. code-block:: python
 
     >>> import pandas as pd
     >>> import pandascharm as pc
@@ -116,7 +116,7 @@ As seen above, characters are stored as rows and sequences as
 columns in the DataFrame. If you want rows to hold sequences, 
 it is easy to transpose the matrix in pandas:
 
-.. code-block:: pycon
+.. code-block:: python
 
     >>> df.transpose()
         0  1  2  3  4
@@ -128,7 +128,7 @@ it is easy to transpose the matrix in pandas:
 Converting a pandas DataFrame to a Dendropy CharacterMatrix
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: pycon
+.. code-block:: python
 
     >>> import pandas as pd
     >>> import pandascharm as pc
@@ -156,7 +156,7 @@ Converting a pandas DataFrame to a Dendropy CharacterMatrix
 Converting a BioPython MultipleSeqAlignment to a pandas DataFrame
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: pycon
+.. code-block:: python
 
     >>> from io import StringIO
     >>> import pandas as pd
@@ -183,7 +183,7 @@ Converting a BioPython MultipleSeqAlignment to a pandas DataFrame
 Converting a pandas DataFrame to a BioPython MultipleSeqAlignment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: pycon
+.. code-block:: python
 
     >>> import pandas as pd
     >>> import pandascharm as pc
