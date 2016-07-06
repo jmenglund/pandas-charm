@@ -1,21 +1,9 @@
 pandas-charm
 ============
 
-.. image:: https://travis-ci.org/jmenglund/pandas-charm.svg?branch=master
-    :target: https://travis-ci.org/jmenglund/pandas-charm
+|Build-Status| |Coverage-Status| |PyPI-Status| |License| |DOI-URI|
 
-.. image:: https://codecov.io/gh/jmenglund/pandas-charm/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/jmenglund/pandas-charm
-
-.. image:: https://img.shields.io/badge/license-MIT-blue.svg
-    :target: https://opensource.org/licenses/MIT
-
-.. image:: https://zenodo.org/badge/23107/jmenglund/pandas-charm.svg
-    :target: https://zenodo.org/badge/latestdoi/23107/jmenglund/pandas-charm
-
-|
-
-pandas-charm is a small Python package (or library) for getting character 
+pandas-charm is a small Python package for getting character 
 matrices (alignments) into and out of `pandas <http://pandas.pydata.org>`_.
 The intention of the package is to make pandas interoperable with 
 other scientific packages that can be used for working with character 
@@ -229,11 +217,12 @@ If you use results produced with this package in a scientific
 publication, please just mention the package name in the text and 
 cite the Zenodo DOI of this project:
 
-.. image:: https://zenodo.org/badge/23107/jmenglund/pandas-charm.svg
-    :target: https://zenodo.org/badge/latestdoi/23107/jmenglund/pandas-charm
+|DOI-URI|
 
 You can select a citation style from the dropdown menu in the 
 *"Cite as"* section on the Zenodo page.
+
+
 Author
 ------
 
