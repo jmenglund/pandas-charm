@@ -239,3 +239,13 @@ Author
 
 Markus Englund
 
+.. |Build-Status| image:: https://travis-ci.org/jmenglund/pandas-charm.svg?branch=master
+   :target: https://travis-ci.org/jmenglund/pandas-charm
+.. |Coverage-Status| image:: https://codecov.io/gh/jmenglund/pandas-charm/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/jmenglund/pandas-charm
+.. |PyPI-Status| image:: https://img.shields.io/pypi/v/pandas-charm.svg
+   :target: https://pypi.python.org/pypi/pandas-charm
+.. |License| image:: https://img.shields.io/pypi/l/pandas-charm.svg
+   :target: https://raw.githubusercontent.com/jmenglund/pandas-charm/master/LICENSE.txt
+.. |DOI-URI| image:: https://zenodo.org/badge/23107/jmenglund/pandas-charm.svg
+   :target: https://zenodo.org/badge/latestdoi/23107/jmenglund/pandas-charm
