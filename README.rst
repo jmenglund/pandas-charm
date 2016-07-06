@@ -234,3 +234,8 @@ cite the Zenodo DOI of this project:
 
 You can select a citation style from the dropdown menu in the 
 *"Cite as"* section on the Zenodo page.
+Author
+------
+
+Markus Englund
+
