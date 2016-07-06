@@ -22,7 +22,7 @@ Things to remember when making a new release of pandas-charm.
 
 #.  Create distributions and upload the files to PyPI.
 
-    .. code-block::
+    .. code-block:: bash
 
         $ python setup.py bdist_wheel --universal
         $ python setup.py sdist
