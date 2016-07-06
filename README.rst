@@ -37,13 +37,6 @@ Source repository: `<https://github.com/jmenglund/pandas-charm>`_
    :local:
 
 
-The name
---------
-
-pandas-charm got its name from the pandas library plus an acronym for
-CHARacter Matrix.
-
-
 Installation
 ------------
 
@@ -213,6 +206,14 @@ Converting a pandas DataFrame to a BioPython MultipleSeqAlignment
     TGCAA t2
     TG-AA t3
     
+
+
+The name
+--------
+
+pandas-charm got its name from the pandas library plus an acronym for
+CHARacter Matrix.
+
 
 License
 -------
