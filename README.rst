@@ -76,7 +76,7 @@ before you start:
 DendroPy CharacterMatrix to pandas DataFrame
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: python
+.. code-block:: pycon
 
     >>> import pandas as pd
     >>> import pandascharm as pc
@@ -103,7 +103,7 @@ As seen above, characters are stored as rows and sequences as
 columns in the DataFrame. If you instead want the rows to hold 
 sequences, it is easy to transpose the matrix in pandas:
 
-.. code-block:: python
+.. code-block:: pycon
 
     >>> df.transpose()
         0  1  2  3  4
@@ -115,7 +115,7 @@ sequences, it is easy to transpose the matrix in pandas:
 pandas DataFrame to Dendropy CharacterMatrix
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: python
+.. code-block:: pycon
 
     >>> import pandas as pd
     >>> import pandascharm as pc
@@ -143,7 +143,7 @@ pandas DataFrame to Dendropy CharacterMatrix
 BioPython MultipleSeqAlignment to pandas DataFrame
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: python
+.. code-block:: pycon
 
     >>> from io import StringIO
     >>> import pandas as pd
@@ -170,7 +170,7 @@ BioPython MultipleSeqAlignment to pandas DataFrame
 pandas DataFrame to BioPython MultipleSeqAlignment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: python
+.. code-block:: pycon
 
     >>> import pandas as pd
     >>> import pandascharm as pc
