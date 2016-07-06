@@ -112,8 +112,8 @@ DendroPy CharacterMatrix to pandas DataFrame
     4  A  A  A
 
 As seen above, characters are stored as rows and sequences as 
-columns in the DataFrame. If you want rows to hold sequences, 
-it is easy to transpose the matrix in pandas:
+columns in the DataFrame. If you instead want the rows to hold 
+sequences, it is easy to transpose the matrix in pandas:
 
 .. code-block:: python
 
