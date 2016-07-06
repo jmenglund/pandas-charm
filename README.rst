@@ -3,18 +3,17 @@ pandas-charm
 
 |Build-Status| |Coverage-Status| |PyPI-Status| |License| |DOI-URI|
 
-pandas-charm is a small Python package for getting character 
+``pandas-charm`` is a small Python package for getting character 
 matrices (alignments) into and out of `pandas <http://pandas.pydata.org>`_.
-The intention of the package is to make pandas interoperable with 
-other scientific packages that can be used for working with character 
-matrices, like for example `BioPython <http://biopython.org>`_ and 
-`Dendropy <http://dendropy.org>`_.
+Its purpose is to make pandas interoperable with other scientific 
+packages that can handle character matrices, like for example 
+`BioPython <http://biopython.org>`_ and `Dendropy <http://dendropy.org>`_.
 
-With pandas-charm, it is currently possible to convert between the 
+With ``pandas-charm``, it is currently possible to convert between the 
 following objects:
 
-* BioPython MultipleSeqAlignment <-> pandas DataFrame
-* DendroPy CharacterMatrix <-> pandas DataFrame
+* ``BioPython`` MultipleSeqAlignment <-> ``pandas`` DataFrame
+* ``DendroPy`` CharacterMatrix <-> ``pandas`` DataFrame
 
 Source repository: `<https://github.com/jmenglund/pandas-charm>`_
 
@@ -48,10 +47,10 @@ can be installed using git:
 Running tests
 -------------
 
-After installing the pandas-charm, you may want to check that everything
-works as expected. Below is an example of how to run the tests with pytest. 
-The packages BioPython, DendroPy, pytest, coverage, and pytest-cov need 
-to be installed.
+After installing the package, you may want to check that everything
+works as expected. Below is an example of how to run the tests with ``pytest``. 
+The packages ``BioPython``, ``DendroPy``, ``pytest``, ``coverage``, and 
+``pytest-cov`` need to be installed.
 
 .. code-block:: bash
 
@@ -63,8 +62,8 @@ Usage
 -----
 
 Below are a few examples on how to use pandas-charm. The examples are 
-written with Python 3 code, but pandas-charm should work also with 
-Python 2.7. You need to install BioPython and/or DendroPy manually 
+written with Python 3 code, but ``pandas-charm`` should work also with 
+Python 2.7. You need to install ``BioPython`` and/or ``DendroPy`` manually 
 before you start:
 
 .. code-block:: bash
@@ -199,14 +198,14 @@ pandas DataFrame to BioPython MultipleSeqAlignment
 The name
 --------
 
-pandas-charm got its name from the pandas library plus an acronym for
+``pandas-charm`` got its name from the ``pandas`` library plus an acronym for
 CHARacter Matrix.
 
 
 License
 -------
 
-pandas-charm is distributed under the 
+``pandas-charm`` is distributed under the 
 `MIT license <https://opensource.org/licenses/MIT>`_.
 
 
