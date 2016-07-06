@@ -6,7 +6,7 @@ Changelog
 
 * Added Python versions for Travis-CI (2.8, 3.3, 3.5)
 * Added ``pep8`` check to Travis-CI
-* Updates to README.rst
+* Updates to *README.rst*
     - Fixed issue with one example not working (``pc.to_charmatrix()``)
     - Updated text in various places
 
@@ -42,5 +42,3 @@ Includes the following functions:
 * ``to_charmatrix()``
 
 Release date: 2016-07-05
-
-
