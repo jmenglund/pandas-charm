@@ -225,7 +225,7 @@ You can select a citation style from the dropdown menu in the
 Author
 ------
 
-Markus Englund
+Markus Englund, `orcid.org/0000-0003-1688-7112 <http://orcid.org/0000-0003-1688-7112>`_
 
 .. |Build-Status| image:: https://travis-ci.org/jmenglund/pandas-charm.svg?branch=master
    :target: https://travis-ci.org/jmenglund/pandas-charm
