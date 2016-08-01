@@ -49,8 +49,8 @@ Running tests
 
 After installing the package, you may want to check that everything
 works as expected. Below is an example of how to run the tests with ``pytest``. 
-The packages ``BioPython``, ``DendroPy``, ``pytest``, ``coverage``, and 
-``pytest-cov`` need to be installed.
+The packages ``pandas``, ``BioPython``, ``DendroPy``, ``pytest``,
+``coverage``, and ``pytest-cov`` need to be installed.
 
 .. code-block:: bash
 
