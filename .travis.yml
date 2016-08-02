@@ -12,8 +12,7 @@ branches:
         - master
 
 script:
-    pep8 pandascharm.py
-    py.test --cov=pandascharm.py
+    py.test --cov=pandascharm.py --pep8
 
 after_success:
   - codecov
