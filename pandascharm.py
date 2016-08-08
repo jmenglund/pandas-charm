@@ -97,7 +97,7 @@ def to_bioalignment(frame, alphabet='generic_alphabet'):
     if alphabet not in [
             'generic_alphabet', 'generic_dna',
             'generic_nucleotide', 'generic_protein', 'generic_rna']:
-        raise ValueError(  # pragma: no cover
+        raise ValueError(
             'Invalid BioPython alphabet: {}'
             .format(alphabet))
     try:
@@ -105,7 +105,7 @@ def to_bioalignment(frame, alphabet='generic_alphabet'):
         from Bio.AlignIO import MultipleSeqAlignment
         from Bio.Seq import Seq
         from Bio.SeqRecord import SeqRecord
-    except ImportError as ex:  # pragma: no cover
+    except ImportError as ex:
         raise ImportError(
             '\'to_bioalignment\' requires BioPython.\n{ex}'.format(ex=str(ex)))
     alignment = MultipleSeqAlignment([])
@@ -131,7 +131,7 @@ def to_charmatrix(frame, data_type):
     """
     try:
         import dendropy
-    except ImportError as ex:  # pragma: no cover
+    except ImportError as ex:
         raise ImportError(
             '\'to_charmatrix\' requires DendroPy.\n{ex}'.format(ex=str(ex)))
     d = frame.apply(lambda x: ''.join(x), axis=0).to_dict()
