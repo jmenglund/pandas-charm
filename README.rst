@@ -1,41 +1,29 @@
 pandas-charm
 ============
 
-.. image:: https://travis-ci.org/jmenglund/pandas-charm.svg?branch=master
-    :target: https://travis-ci.org/jmenglund/pandas-charm
+|Build-Status| |Coverage-Status| |PyPI-Status| |License| |DOI-URI|
 
-.. image:: https://codecov.io/gh/jmenglund/pandas-charm/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/jmenglund/pandas-charm
-
-.. image:: https://img.shields.io/badge/license-MIT-blue.svg
-    :target: https://opensource.org/licenses/MIT
-
-.. image:: https://zenodo.org/badge/23107/jmenglund/pandas-charm.svg
-    :target: https://zenodo.org/badge/latestdoi/23107/jmenglund/pandas-charm
-
-|
-
-pandas-charm is a small Python package (or library) for getting character 
+``pandas-charm`` is a small Python package for getting character 
 matrices (alignments) into and out of `pandas <http://pandas.pydata.org>`_.
-The intention of the package is to make pandas interoperable with 
-other scientific packages that can be used for working with character 
-matrices, like for example `BioPython <http://biopython.org>`_ and 
-`Dendropy <http://dendropy.org>`_.
+Its purpose is to make pandas interoperable with other scientific 
+packages that can be used for dealing with character matrices, like for example 
+`BioPython <http://biopython.org>`_ and `Dendropy <http://dendropy.org>`_.
 
-With pandas-charm, it is currently possible to convert between the 
+With ``pandas-charm``, it is currently possible to convert between the 
 following objects:
 
 * BioPython MultipleSeqAlignment <-> pandas DataFrame
 * DendroPy CharacterMatrix <-> pandas DataFrame
 
+The code has been tested with Python 2.7, 3.3, 3.4 and 3.5.
+
 Source repository: `<https://github.com/jmenglund/pandas-charm>`_
 
+------------------------------------------
 
-The name
---------
-
-pandas-charm got its name from the pandas library plus an acronym for
-CHARacter Matrix.
+.. contents:: Table of contents
+   :backlinks: top
+   :local:
 
 
 Installation
@@ -49,7 +37,7 @@ hosted on `PyPI <https://pypi.python.org/>`_:
     $ pip install pandas-charm
 
 The project is hosted at https://github.com/jmenglund/pandas-charm and 
-can be installed using git:
+can also be installed using git:
 
 .. code-block::
 
@@ -58,25 +46,30 @@ can be installed using git:
     $ python setup.py install
 
 
+You may consider installing ``pandas-charm`` and its required Python packages 
+within a virtual environment in order to avoid cluttering your system's 
+Python path. See for example the environment management system 
+`conda <http://conda.pydata.org>`_ or the package 
+`virtualenv <https://virtualenv.pypa.io/en/latest/>`_.
+
+
 Running tests
 -------------
 
-After installing the pandas-charm, you may want to check that everything
-works as expected. Below is an example of how to run the tests with pytest. 
-The packages BioPython, DendroPy, pytest, coverage, and pytest-cov need 
-to be installed.
+Testing is carried out with `pytest <http://pytest.org>`_. Here is an 
+example on how to run the test suite and generating a coverage report:
 
 .. code-block::
 
-    $ cd pandas-charm
-    $ py.test -v --cov-report term-missing --cov pandascharm.py
+    $ pip install pytest pytest-cov pytest-pep8 dendropy biopython 
+    $ py.test -v --cov-report term-missing --cov pandascharm.py --pep8
 
 
 Usage
 -----
 
 Below are a few examples on how to use pandas-charm. The examples are 
-written with Python 3 code, but pandas-charm should work also with 
+written with Python 3 code, but ``pandas-charm`` should work also with 
 Python 2.7. You need to install BioPython and/or DendroPy manually 
 before you start:
 
@@ -86,8 +79,8 @@ before you start:
     $ pip install dendropy
 
 
-Converting a DendroPy CharacterMatrix to a pandas DataFrame
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DendroPy CharacterMatrix to pandas DataFrame
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: pycon
 
@@ -112,9 +105,9 @@ Converting a DendroPy CharacterMatrix to a pandas DataFrame
     3  A  A  A
     4  A  A  A
 
-As seen above, characters are stored as rows and sequences as 
-columns in the DataFrame. If you want rows to hold sequences, 
-it is easy to transpose the matrix in pandas:
+By default, characters are stored as rows and sequences as columns 
+in the DataFrame. If you want rows to hold sequences, just transpose 
+the matrix in pandas:
 
 .. code-block:: pycon
 
@@ -125,8 +118,8 @@ it is easy to transpose the matrix in pandas:
     t3  T  G  -  A  A
 
 
-Converting a pandas DataFrame to a Dendropy CharacterMatrix
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pandas DataFrame to Dendropy CharacterMatrix
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: pycon
 
@@ -145,7 +138,7 @@ Converting a pandas DataFrame to a Dendropy CharacterMatrix
     3  A  A  A
     4  A  A  A
     
-    >>> matrix = pc.to_charmatrix(df, type='dna')
+    >>> matrix = pc.to_charmatrix(df, data_type='dna')
     >>> print(matrix.as_string('phylip'))
     3 5
     t1  TCCAA
@@ -153,8 +146,8 @@ Converting a pandas DataFrame to a Dendropy CharacterMatrix
     t3  TG-AA
 
 
-Converting a BioPython MultipleSeqAlignment to a pandas DataFrame
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BioPython MultipleSeqAlignment to pandas DataFrame
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: pycon
 
@@ -180,8 +173,8 @@ Converting a BioPython MultipleSeqAlignment to a pandas DataFrame
     4  A  A  A
 
 
-Converting a pandas DataFrame to a BioPython MultipleSeqAlignment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pandas DataFrame to BioPython MultipleSeqAlignment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: pycon
 
@@ -208,11 +201,19 @@ Converting a pandas DataFrame to a BioPython MultipleSeqAlignment
     TG-AA t3
     
 
+
+The name
+--------
+
+``pandas-charm`` got its name from the pandas library plus an acronym for
+CHARacter Matrix.
+
+
 License
 -------
 
-pandas-charm is distributed under 
-`the MIT license <https://opensource.org/licenses/MIT>`_.
+``pandas-charm`` is distributed under the 
+`MIT license <https://opensource.org/licenses/MIT>`_.
 
 
 Citing
@@ -222,8 +223,24 @@ If you use results produced with this package in a scientific
 publication, please just mention the package name in the text and 
 cite the Zenodo DOI of this project:
 
-.. image:: https://zenodo.org/badge/23107/jmenglund/pandas-charm.svg
-    :target: https://zenodo.org/badge/latestdoi/23107/jmenglund/pandas-charm
+|DOI-URI|
 
 You can select a citation style from the dropdown menu in the 
-*"Cite as"* section on the Zenodo page.
+"Cite as" section on the Zenodo page.
+
+
+Author
+------
+
+Markus Englund, `orcid.org/0000-0003-1688-7112 <http://orcid.org/0000-0003-1688-7112>`_
+
+.. |Build-Status| image:: https://travis-ci.org/jmenglund/pandas-charm.svg?branch=master
+   :target: https://travis-ci.org/jmenglund/pandas-charm
+.. |Coverage-Status| image:: https://codecov.io/gh/jmenglund/pandas-charm/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/jmenglund/pandas-charm
+.. |PyPI-Status| image:: https://img.shields.io/pypi/v/pandas-charm.svg
+   :target: https://pypi.python.org/pypi/pandas-charm
+.. |License| image:: https://img.shields.io/pypi/l/pandas-charm.svg
+   :target: https://raw.githubusercontent.com/jmenglund/pandas-charm/master/LICENSE.txt
+.. |DOI-URI| image:: https://zenodo.org/badge/23107/jmenglund/pandas-charm.svg
+   :target: https://zenodo.org/badge/latestdoi/23107/jmenglund/pandas-charm

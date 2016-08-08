@@ -72,7 +72,6 @@ class TestAsObject():
         assert_frame_equal(frame_as_object(self.frame_cat), self.frame_obj)
 
 
-
 class TestCharmatrixConversion():
 
     dna_charmatrix_string = '3 5\nt1  TCCAA\nt2  TGCAA\nt3  TG-AA\n'
@@ -108,11 +107,11 @@ class TestCharmatrixConversion():
         't3': ['0', '2', '-', '1', '0']}, dtype='category')
 
     def test_from_charmatrix_dna(self):
-        assert_frame_equal (
+        assert_frame_equal(
             from_charmatrix(self.dna_charmatrix), self.dna_frame)
-            
+
     def test_from_charmatrix_dna_object(self):
-        assert_frame_equal (
+        assert_frame_equal(
             from_charmatrix(self.dna_charmatrix, categorical=False),
             frame_as_object(self.dna_frame))
 
@@ -122,7 +121,7 @@ class TestCharmatrixConversion():
             .as_string('phylip') == self.dna_charmatrix.as_string('phylip'))
 
     def test_from_charmatrix_rna(self):
-        assert_frame_equal (
+        assert_frame_equal(
             from_charmatrix(self.rna_charmatrix), self.rna_frame)
 
     def test_to_charmatrix_rna(self):
@@ -131,7 +130,7 @@ class TestCharmatrixConversion():
             .as_string('phylip') == self.rna_charmatrix.as_string('phylip'))
 
     def test_from_charmatrix_protein(self):
-        assert_frame_equal (
+        assert_frame_equal(
             from_charmatrix(self.protein_charmatrix), self.protein_frame)
 
     def test_to_charmatrix_protein(self):
@@ -141,7 +140,7 @@ class TestCharmatrixConversion():
             .as_string('phylip'))
 
     def test_from_charmatrix_standard(self):
-        assert_frame_equal (
+        assert_frame_equal(
             from_charmatrix(self.standard_charmatrix), self.standard_frame)
 
     def test_to_charmatrix_standard(self):
@@ -180,10 +179,14 @@ class TestBioalignmentConversion():
         't3': ['T', 'G', '-', 'A', 'A']}, dtype='category')
 
     def test_from_bioalignment_dna(self):
-        assert_frame_equal (
+        assert_frame_equal(
             from_bioalignment(self.dna_bioalignment), self.dna_frame)
 
     def test_to_bioalignment_dna(self):
         assert (
             to_bioalignment(self.dna_frame, alphabet='generic_dna')
             .format('phylip') == self.dna_bioalignment.format('phylip'))
+
+    def test_invalid_alphabet(self):
+        with pytest.raises(ValueError):
+            to_bioalignment(self.dna_frame, alphabet='dna')
