@@ -187,3 +187,7 @@ class TestBioalignmentConversion():
         assert (
             to_bioalignment(self.dna_frame, alphabet='generic_dna')
             .format('phylip') == self.dna_bioalignment.format('phylip'))
+
+    def test_invalid_alphabet(self)
+        with pytest.raises(ValueError):
+            to_bioalignment(self.dna_frame, alphabet='dna')
