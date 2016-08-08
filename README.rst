@@ -12,8 +12,10 @@ packages that can be used for dealing with character matrices, like for example
 With ``pandas-charm``, it is currently possible to convert between the 
 following objects:
 
-* ``BioPython`` MultipleSeqAlignment <-> ``pandas`` DataFrame
-* ``DendroPy`` CharacterMatrix <-> ``pandas`` DataFrame
+* BioPython MultipleSeqAlignment <-> pandas DataFrame
+* DendroPy CharacterMatrix <-> pandas DataFrame
+
+The code has been tested with Python 2.7, 3.3, 3.4 and 3.5.
 
 Source repository: `<https://github.com/jmenglund/pandas-charm>`_
 
@@ -68,7 +70,7 @@ Usage
 
 Below are a few examples on how to use pandas-charm. The examples are 
 written with Python 3 code, but ``pandas-charm`` should work also with 
-Python 2.7. You need to install ``BioPython`` and/or ``DendroPy`` manually 
+Python 2.7. You need to install BioPython and/or DendroPy manually 
 before you start:
 
 .. code-block::
@@ -103,9 +105,9 @@ DendroPy CharacterMatrix to pandas DataFrame
     3  A  A  A
     4  A  A  A
 
-As seen above, characters are stored as rows and sequences as 
-columns in the DataFrame. If you instead want the rows to hold 
-sequences, it is easy to transpose the matrix in pandas:
+By default, characters are stored as rows and sequences as columns 
+in the DataFrame. If you want the rows to hold sequences instead, 
+just transpose the matrix in pandas:
 
 .. code-block:: pycon
 
@@ -203,7 +205,7 @@ pandas DataFrame to BioPython MultipleSeqAlignment
 The name
 --------
 
-``pandas-charm`` got its name from the ``pandas`` library plus an acronym for
+``pandas-charm`` got its name from the pandas library plus an acronym for
 CHARacter Matrix.
 
 
