@@ -35,7 +35,7 @@ hosted on `PyPI <https://pypi.python.org/>`_:
     $ pip install pandas-charm
 
 The project is hosted at https://github.com/jmenglund/pandas-charm and 
-can be installed using git:
+can also be installed using git:
 
 .. code-block::
 
@@ -44,18 +44,23 @@ can be installed using git:
     $ python setup.py install
 
 
+You may consider installing ``pandas-charm`` and its required Python packages 
+within a virtual environment in order to avoid cluttering your system's 
+Python path. See for example the environment management system 
+`conda <http://conda.pydata.org>`_ or the package 
+`virtualenv <https://virtualenv.pypa.io/en/latest/>`_.
+
+
 Running tests
 -------------
 
-After installing the package, you may want to check that everything
-works as expected. Below is an example of how to run the tests with ``pytest``. 
-The packages ``pandas``, ``BioPython``, ``DendroPy``, ``pytest``,
-``coverage``, and ``pytest-cov`` need to be installed.
+Testing is carried out with `pytest <http://pytest.org>`_. Here is an 
+example on how to run the test suite and generating a coverage report:
 
 .. code-block::
 
-    $ cd pandas-charm
-    $ py.test -v --cov-report term-missing --cov pandascharm.py
+    $ pip install pytest pytest-cov pytest-pep8 dendropy biopython 
+    $ py.test -v --cov-report term-missing --cov pandascharm.py --pep8
 
 
 Usage
@@ -219,7 +224,7 @@ cite the Zenodo DOI of this project:
 |DOI-URI|
 
 You can select a citation style from the dropdown menu in the 
-*"Cite as"* section on the Zenodo page.
+"Cite as" section on the Zenodo page.
 
 
 Author
