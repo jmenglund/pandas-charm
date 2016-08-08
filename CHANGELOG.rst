@@ -9,10 +9,11 @@ Changelog
 * Updates to *README.rst*
     - Fixed issue with one example not working (``pc.to_charmatrix()``)
     - Updated text in various places
+* Updates to *release-checklist.rst*
 
-Release date: YYYY-MM-DD
+Release date: 2016-08-08
 
-`View commits <https://github.com/jmenglund/pandas-charm/compare/v0.1.0...v0.1.1>`_
+`View commits <https://github.com/jmenglund/pandas-charm/compare/v0.1.1...v0.1.2>`_
 
 
 0.1.1
