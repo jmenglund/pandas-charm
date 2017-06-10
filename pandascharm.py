@@ -27,7 +27,7 @@ def frame_as_categorical(frame, include_categories=None):
     current_categories_notnull = (
         current_categories[pandas.notnull(current_categories)])
     categories = set(current_categories_notnull).union(include_categories)
-    categorical = frame.apply(lambda x: pandas.Series(x, dtype='category'))
+    categorical = frame.apply(lambda x: pandas.Series(x.astype('category')))
     unified_categorical = categorical.apply(
         lambda x: x.cat.set_categories(new_categories=categories))
     return unified_categorical
