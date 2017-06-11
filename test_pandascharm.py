@@ -108,7 +108,8 @@ class TestCharmatrixConversion():
 
     def test_from_charmatrix_dna(self):
         assert_frame_equal(
-            from_charmatrix(self.dna_charmatrix), self.dna_frame)
+            from_charmatrix(self.dna_charmatrix), self.dna_frame,
+            check_categorical=False)
 
     def test_from_charmatrix_dna_object(self):
         assert_frame_equal(
@@ -122,7 +123,8 @@ class TestCharmatrixConversion():
 
     def test_from_charmatrix_rna(self):
         assert_frame_equal(
-            from_charmatrix(self.rna_charmatrix), self.rna_frame)
+            from_charmatrix(self.rna_charmatrix), self.rna_frame,
+            check_categorical=False)
 
     def test_to_charmatrix_rna(self):
         assert (
@@ -131,7 +133,8 @@ class TestCharmatrixConversion():
 
     def test_from_charmatrix_protein(self):
         assert_frame_equal(
-            from_charmatrix(self.protein_charmatrix), self.protein_frame)
+            from_charmatrix(self.protein_charmatrix), self.protein_frame,
+            check_categorical=False)
 
     def test_to_charmatrix_protein(self):
         assert (
@@ -141,7 +144,8 @@ class TestCharmatrixConversion():
 
     def test_from_charmatrix_standard(self):
         assert_frame_equal(
-            from_charmatrix(self.standard_charmatrix), self.standard_frame)
+            from_charmatrix(self.standard_charmatrix), self.standard_frame,
+            check_categorical=False)
 
     def test_to_charmatrix_standard(self):
         assert (

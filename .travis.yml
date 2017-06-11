@@ -12,7 +12,9 @@ branches:
         - master
 
 script:
-    py.test --cov=pandascharm.py --pep8
+    - py.test --pep8
+    - coverage run -m py.test
+    - coverage report --include test_*.py
 
 after_success:
   - codecov
