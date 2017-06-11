@@ -15,7 +15,7 @@ following objects:
 * BioPython MultipleSeqAlignment <-> pandas DataFrame
 * DendroPy CharacterMatrix <-> pandas DataFrame
 
-The code has been tested with Python 2.7, 3.3, 3.4 and 3.5.
+The code has been tested with Python 2.7, 3.5 and 3.6.
 
 Source repository: `<https://github.com/jmenglund/pandas-charm>`_
 
