@@ -61,8 +61,10 @@ example on how to run the test suite and generating a coverage report:
 
 .. code-block::
 
-    $ pip install pytest pytest-cov pytest-pep8 dendropy biopython 
-    $ py.test -v --cov-report term-missing --cov pandascharm.py --pep8
+    $ pip install pytest pytest-pep8 dendropy biopython 
+    $ py.test -v --pep8
+    $ coverage run -m py.test
+    $ coverage report --omit test_*.py
 
 
 Usage

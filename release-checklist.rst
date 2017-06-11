@@ -13,7 +13,9 @@ Things to remember when making a new release of pandas-charm.
 
     .. code-block::
 
-        $ py.test -v --cov-report term-missing --cov pandascharm.py --pep8
+        $ py.test -v --pep8
+        $ coverage run -m py.test
+        $ coverage report --omit test_*.py
 
 #.  Update the documentation in *README.rst*.
 
