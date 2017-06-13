@@ -9,7 +9,7 @@ Changelog
 * Fixed problems with reporting test coverage.
 * Removed Travis-CI testing for Python 3.3 and 3.4.
 * Added Travis-CI testing for Python 3.6.
-* List of included categories are now ignored in all tests involving
+* List of included categories are now ignored in matrix conversions involving
   categorical data.
 * ``pytest-cov`` removed from *requirements.txt*.
 * Updates to *setup.py*.
