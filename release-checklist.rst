@@ -9,7 +9,7 @@ Things to remember when making a new release of pandas-charm.
 
 #.  Make desirable changes to the code.
 
-#.  Run tests with coverage report and PEP8 check:
+#.  Run tests with PEP8 check and report coverage:
 
     .. code-block::
 
