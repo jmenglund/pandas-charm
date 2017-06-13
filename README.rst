@@ -22,7 +22,7 @@ Source repository: `<https://github.com/jmenglund/pandas-charm>`_
 ------------------------------------------
 
 .. contents:: Table of contents
-   :backlinks: top
+   :backlinks: none
    :local:
 
 
