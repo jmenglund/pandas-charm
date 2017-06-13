@@ -64,7 +64,7 @@ example on how to run the test suite and generating a coverage report:
     $ pip install pytest pytest-pep8 dendropy biopython 
     $ py.test -v --pep8
     $ coverage run -m py.test
-    $ coverage report --omit test_*.py
+    $ coverage report --include pandascharm.py
 
 
 Usage
