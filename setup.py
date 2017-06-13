@@ -18,7 +18,7 @@ setup(
     py_modules=['pandascharm'],
     install_requires=['pandas>=0.16', 'numpy'],
     extras_require={'testing': [
-        'coverage', 'pytest', 'pytest-cov', 'biopython', 'dendropy']},
+        'coverage', 'pytest', 'biopython', 'dendropy']},
     author='Markus Englund',
     author_email='jan.markus.englund@gmail.com',
     url='https://github.com/jmenglund/pandas-charm',
