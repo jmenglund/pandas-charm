@@ -1,6 +1,23 @@
 Changelog
 =========
 
+0.1.3
+-----
+
+* Fixed bug in function ``frame_as_categorical`` that caused an error when
+  trying to change the dtype to "category".
+* Fixed problems with reporting test coverage.
+* Removed Travis-CI testing for Python 3.3 and 3.4.
+* Added Travis-CI testing for Python 3.6.
+* Categories are now ignored in all tests involving categorical data.
+* ``pytest-cov`` removed from *requirements.txt*.
+* Updates to *README.rst* and *release-checklist.rst*.
+* Updates to *setup.py*.
+
+
+Release date: None
+
+
 0.1.2
 -----
 
