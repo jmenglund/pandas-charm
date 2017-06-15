@@ -46,13 +46,11 @@ can also be installed using git:
     $ python setup.py install
 
 
-.. note::
-
-    You may consider installing ``pandas-charm`` and its required Python packages 
-    within a virtual environment in order to avoid cluttering your system's 
-    Python path. See for example the environment management system 
-    `conda <http://conda.pydata.org>`_ or the package 
-    `virtualenv <https://virtualenv.pypa.io/en/latest/>`_.
+You may consider installing ``pandas-charm`` and its required Python packages 
+within a virtual environment in order to avoid cluttering your system's 
+Python path. See for example the environment management system 
+`conda <http://conda.pydata.org>`_ or the package 
+`virtualenv <https://virtualenv.pypa.io/en/latest/>`_.
 
 
 Running tests
