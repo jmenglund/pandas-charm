@@ -57,7 +57,7 @@ Running tests
 -------------
 
 Testing is carried out with `pytest <http://pytest.org>`_. Here is an 
-example on how to run the test suite and generating a coverage report:
+example that runs the test suite and also generates a coverage report:
 
 .. code-block::
 
@@ -227,8 +227,8 @@ cite the Zenodo DOI of this project:
 
 |DOI-URI|
 
-You can select a citation style from the dropdown menu in the 
-"Cite as" section on the Zenodo page.
+Choose your preferred citation style in the "Cite as" section on the Zenodo
+page.
 
 
 Author
