@@ -15,7 +15,7 @@ Things to remember when making a new release of pandas-charm.
 
         $ py.test -v --pep8
         $ coverage run -m py.test
-        $ coverage report --include pandascharm.py
+        $ coverage report --include pandascharm.py -m
 
 #.  Update the documentation in *README.rst*.
 
