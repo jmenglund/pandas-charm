@@ -56,8 +56,8 @@ Python path. See for example the environment management system
 Running tests
 -------------
 
-Testing is carried out with `pytest <http://pytest.org>`_. Here is an 
-example that runs the test suite and also generates a coverage report:
+Testing is carried out with `pytest <http://pytest.org>`_. The following
+example shows how you can run the test suite and generate a coverage report:
 
 .. code-block::
 
