@@ -96,8 +96,8 @@ DendroPy CharacterMatrix to pandas DataFrame
     t2  TGCAA
     t3  TG-AA
     
-    >>> matrix = dendropy.DnaCharacterMatrix.get_from_string(
-    ...     dna_string, schema='phylip')
+    >>> matrix = dendropy.DnaCharacterMatrix.get(
+    ...     data=dna_string, schema='phylip')
     >>> df = pc.from_charmatrix(matrix)
     >>> df
       t1 t2 t3
