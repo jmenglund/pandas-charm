@@ -11,7 +11,7 @@ branches:
         - master
 
 script:
-    - py.test --pep8
+    - py.test pandascharm.py --pep8
     - coverage run -m py.test
     - coverage report --omit test_*.py
 
