@@ -13,7 +13,7 @@ Things to remember when making a new release of pandas-charm.
 
     .. code-block::
 
-        $ py.test -v --pep8
+        $ py.test -v --pep8 pandascharm.py
         $ coverage run -m py.test
         $ coverage report --include pandascharm.py -m
 
