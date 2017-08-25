@@ -75,32 +75,32 @@ class TestAsObject():
 class TestCharmatrixConversion():
 
     dna_charmatrix_string = '3 5\nt1  TCCAA\nt2  TGCAA\nt3  TG-AA\n'
-    dna_charmatrix = dendropy.DnaCharacterMatrix.get_from_string(
-        dna_charmatrix_string, schema='phylip')
+    dna_charmatrix = dendropy.DnaCharacterMatrix.get(
+        data=dna_charmatrix_string, schema='phylip')
     dna_frame = pandas.DataFrame({
         't1': ['T', 'C', 'C', 'A', 'A'],
         't2': ['T', 'G', 'C', 'A', 'A'],
         't3': ['T', 'G', '-', 'A', 'A']}, dtype='category')
 
     rna_charmatrix_string = '3 5\nt1  UCCAA\nt2  UGCAA\nt3  UG-AA\n'
-    rna_charmatrix = dendropy.RnaCharacterMatrix.get_from_string(
-        rna_charmatrix_string, schema='phylip')
+    rna_charmatrix = dendropy.RnaCharacterMatrix.get(
+        data=rna_charmatrix_string, schema='phylip')
     rna_frame = pandas.DataFrame({
         't1': ['U', 'C', 'C', 'A', 'A'],
         't2': ['U', 'G', 'C', 'A', 'A'],
         't3': ['U', 'G', '-', 'A', 'A']}, dtype='category')
 
     protein_charmatrix_string = '3 5\nt1  VKYPN\nt2  VLYPN\nt3  VL-PN\n'
-    protein_charmatrix = dendropy.ProteinCharacterMatrix.get_from_string(
-        protein_charmatrix_string, schema='phylip')
+    protein_charmatrix = dendropy.ProteinCharacterMatrix.get(
+        data=protein_charmatrix_string, schema='phylip')
     protein_frame = pandas.DataFrame({
         't1': ['V', 'K', 'Y', 'P', 'N'],
         't2': ['V', 'L', 'Y', 'P', 'N'],
         't3': ['V', 'L', '-', 'P', 'N']}, dtype='category')
 
     standard_charmatrix_string = '3 5\nt1  01010\nt2  02010\nt3  02-10\n'
-    standard_charmatrix = dendropy.StandardCharacterMatrix.get_from_string(
-        standard_charmatrix_string, schema='phylip')
+    standard_charmatrix = dendropy.StandardCharacterMatrix.get(
+        data=standard_charmatrix_string, schema='phylip')
     standard_frame = pandas.DataFrame({
         't1': ['0', '1', '0', '1', '0'],
         't2': ['0', '2', '0', '1', '0'],
