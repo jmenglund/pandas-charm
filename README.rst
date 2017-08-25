@@ -15,14 +15,14 @@ following objects:
 * BioPython MultipleSeqAlignment <-> pandas DataFrame
 * DendroPy CharacterMatrix <-> pandas DataFrame
 
-The code has been tested with Python 2.7, 3.3, 3.4 and 3.5.
+The code has been tested with Python 2.7, 3.5 and 3.6.
 
 Source repository: `<https://github.com/jmenglund/pandas-charm>`_
 
 ------------------------------------------
 
 .. contents:: Table of contents
-   :backlinks: top
+   :backlinks: none
    :local:
 
 
@@ -56,13 +56,15 @@ Python path. See for example the environment management system
 Running tests
 -------------
 
-Testing is carried out with `pytest <http://pytest.org>`_. Here is an 
-example on how to run the test suite and generating a coverage report:
+Testing is carried out with `pytest <http://pytest.org>`_. The following
+example shows how you can run the test suite and generate a coverage report:
 
 .. code-block::
 
-    $ pip install pytest pytest-cov pytest-pep8 dendropy biopython 
-    $ py.test -v --cov-report term-missing --cov pandascharm.py --pep8
+    $ pip install pytest pytest-pep8 dendropy biopython 
+    $ py.test -v --pep8
+    $ coverage run -m py.test
+    $ coverage report --include pandascharm.py
 
 
 Usage
@@ -225,8 +227,8 @@ cite the Zenodo DOI of this project:
 
 |DOI-URI|
 
-You can select a citation style from the dropdown menu in the 
-"Cite as" section on the Zenodo page.
+Choose your preferred citation style in the "Cite as" section on the Zenodo
+page.
 
 
 Author

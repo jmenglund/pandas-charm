@@ -1,6 +1,25 @@
 Changelog
 =========
 
+0.1.3
+-----
+
+* Fixed bug in function ``frame_as_categorical`` that caused an error when
+  trying to change the dtype to "category".
+* Fixed problems with reporting test coverage.
+* Removed Travis-CI testing for Python 3.3 and 3.4.
+* Added Travis-CI testing for Python 3.6.
+* List of included categories are now ignored in matrix conversions involving
+  categorical data.
+* ``pytest-cov`` removed from *requirements.txt*.
+* Updates to *setup.py*.
+* Updates to *README.rst*.
+* Updates to *release-checklist.rst*.
+
+Release date: 2017-08-25
+
+`View commits <https://github.com/jmenglund/pandas-charm/compare/v0.1.2...v0.1.3>`_
+
 0.1.2
 -----
 

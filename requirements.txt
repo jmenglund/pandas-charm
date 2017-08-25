@@ -2,6 +2,5 @@ pandas>=0.16
 pytest>=2.8
 codecov
 pytest-pep8
-pytest-cov
 DendroPy>=4.0
 BioPython

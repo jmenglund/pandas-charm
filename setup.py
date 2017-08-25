@@ -8,7 +8,7 @@ from io import open
 
 setup(
     name='pandas-charm',
-    version='0.1.2',
+    version='0.1.3',
     description=(
         'A small Python library for getting character matrices '
         '(alignments) into and out of pandas'),
@@ -18,7 +18,7 @@ setup(
     py_modules=['pandascharm'],
     install_requires=['pandas>=0.16', 'numpy'],
     extras_require={'testing': [
-        'coverage', 'pytest', 'pytest-cov', 'biopython', 'dendropy']},
+        'coverage', 'pytest', 'biopython', 'dendropy']},
     author='Markus Englund',
     author_email='jan.markus.englund@gmail.com',
     url='https://github.com/jmenglund/pandas-charm',
@@ -32,9 +32,8 @@ setup(
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
     ],
     keywords=['alignment', 'BioPython', 'DendroPy', 'pandas'],
 )

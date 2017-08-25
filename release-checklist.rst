@@ -9,11 +9,13 @@ Things to remember when making a new release of pandas-charm.
 
 #.  Make desirable changes to the code.
 
-#.  Run tests with coverage report and PEP8 check:
+#.  Run tests with PEP8 check and report coverage:
 
     .. code-block::
 
-        $ py.test -v --cov-report term-missing --cov pandascharm.py --pep8
+        $ py.test -v --pep8 pandascharm.py
+        $ coverage run -m py.test
+        $ coverage report --include pandascharm.py -m
 
 #.  Update the documentation in *README.rst*.
 

@@ -2,9 +2,8 @@ language: python
 
 python:
     - '2.7'
-    - '3.3'
-    - '3.4'
     - '3.5'
+    - '3.6'
 
 # whitelist
 branches:
@@ -12,9 +11,9 @@ branches:
         - master
 
 script:
-    - py.test --pep8
+    - py.test pandascharm.py --pep8
     - coverage run -m py.test
-    - coverage report --include test_*.py
+    - coverage report --omit test_*.py
 
 after_success:
   - codecov
