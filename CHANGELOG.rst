@@ -11,10 +11,10 @@ Changelog
 * Added Travis-CI testing for Python 3.6.
 * List of included categories are now ignored in matrix conversions involving
   categorical data.
-* ``pytest-cov`` removed from *requirements.txt*.
-* Updates to *setup.py*.
-* Updates to *README.rst*.
-* Updates to *release-checklist.rst*.
+* ``pytest-cov`` removed from ``requirements.txt``.
+* Updates to ``setup.py``.
+* Updates to ``README.rst``.
+* Updates to ``release-checklist.rst``.
 
 Release date: 2017-08-25
 
@@ -24,11 +24,11 @@ Release date: 2017-08-25
 -----
 
 * Added Python versions for Travis-CI (3.3, 3.5)
-* Added ``pep8`` check to Travis-CI
-* Updates to *README.rst*
+* Added PEP8 check to Travis-CI
+* Updates to ``README.rst``
     - Fixed issue with one example not working (``pc.to_charmatrix()``)
     - Updated text in various places
-* Updates to *release-checklist.rst*
+* Updates to ``release-checklist.rst``
 
 Release date: 2016-08-08
 
@@ -39,8 +39,8 @@ Release date: 2016-08-08
 -----
 
 * Simplified builds with Travis-CI.
-* DOI badge added to the top of *README.rst*.
-* Information on how to cite ``pandas-charm`` added to *README.rst*.
+* DOI badge added to the top of ``README.rst``.
+* Information on how to cite pandas-charm added to ``README.rst``.
 
 Release date: 2016-07-05
 
