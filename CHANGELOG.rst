@@ -1,6 +1,16 @@
 Changelog
 =========
 
+0.1.4
+-----
+
+* Updates to ``README.rst``
+* Updates to ``release-checklist.rst``
+
+Release date:
+
+`View commits <https://github.com/jmenglund/pandas-charm/compare/v0.1.3...v0.1.4>`_
+
 0.1.3
 -----
 
