@@ -10,6 +10,11 @@ branches:
     only:
         - master
 
+before_install:
+    - pip install coverage
+    - pip install pytest
+    - pip install pytest-pep8
+
 script:
     - py.test pandascharm.py --pep8
     - coverage run -m py.test
