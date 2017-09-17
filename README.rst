@@ -245,6 +245,7 @@ Markus Englund, `orcid.org/0000-0003-1688-7112 <http://orcid.org/0000-0003-1688-
    :alt: PyPI status
 .. |License| image:: https://img.shields.io/pypi/l/pandas-charm.svg
    :target: https://raw.githubusercontent.com/jmenglund/pandas-charm/master/LICENSE.txt
+   :alt: License
 .. |DOI-URI| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.848750.svg
    :target: https://doi.org/10.5281/zenodo.848750
    :alt: DOI
