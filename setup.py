@@ -16,7 +16,7 @@ setup(
         join(dirname(__file__), 'README.rst'), encoding='utf-8').read(),
     packages=find_packages(exclude=['docs', 'tests*']),
     py_modules=['pandascharm'],
-    install_requires=['pandas>=0.16', 'numpy'],
+    install_requires=['pandas>=0.16'],
     extras_require={'testing': [
         'coverage', 'pytest', 'biopython', 'dendropy']},
     author='Markus Englund',
