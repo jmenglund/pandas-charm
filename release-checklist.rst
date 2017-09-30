@@ -18,7 +18,7 @@ Things to remember when making a new release of pandas-charm.
 
 #.  Update the documentation in ``README.rst``.
 
-#.  Update ``CHANGELOG.rst``.
+#.  Update ``CHANGELOG.rst`` and add a release date.
 
 #.  Update the release (version) number in ``setup.py`` and
     ``pandascharm.py``. Use `Semantic Versioning <http://semver.org>`_.
@@ -31,7 +31,7 @@ Things to remember when making a new release of pandas-charm.
 
     .. code-block:: none
 
-        $ python setup.py sdist bdist_wheel
+        $ python setup.py sdist bdist_wheel --universal
         $ twine upload dist/*
 
 #.  Create the new release in GitHub.
