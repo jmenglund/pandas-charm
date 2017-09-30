@@ -6,7 +6,7 @@ pandas-charm
 pandas-charm is a small Python package for getting character
 matrices (alignments) into and out of `pandas <http://pandas.pydata.org>`_.
 Use this library to make pandas interoperable with
-`BioPython <http://biopython.org>`_ and `Dendropy <http://dendropy.org>`_.
+`BioPython <http://biopython.org>`_ and `DendroPy <http://dendropy.org>`_.
 
 Convert between the following objects:
 
