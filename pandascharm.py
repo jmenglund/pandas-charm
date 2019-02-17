@@ -41,15 +41,6 @@ def frame_as_object(frame):
     return frame.apply(lambda x: x.astype('object'))
 
 
-def from_dict(d, categorical=True):
-    d_seq_list = {k: list(v) for (k, v) in d.items()}
-    frame = pandas.DataFrame(d_seq_list)
-    if categorical:
-        return frame_as_categorical(frame)
-    else:
-        return frame
-
-
 def from_bioalignment(bioalignment, categorical=True):
     """
     Convert a BioPython alignment to a pandas DataFrame.
@@ -90,6 +81,15 @@ def from_charmatrix(charmatrix, categorical=True):
     else:
         new_frame = frame
     return new_frame
+
+
+def from_dict(d, categorical=True):
+    d_seq_list = {k: list(v) for (k, v) in d.items()}
+    frame = pandas.DataFrame(d_seq_list)
+    if categorical:
+        return frame_as_categorical(frame)
+    else:
+        return frame
 
 
 def to_bioalignment(frame, alphabet='generic_alphabet'):
