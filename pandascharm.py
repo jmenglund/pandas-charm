@@ -159,3 +159,7 @@ def to_charmatrix(frame, data_type):
     taxon_names = list(frame.columns)
     charmatrix.taxon_namespace.sort(key=lambda x: taxon_names.index(x.label))
     return charmatrix
+
+
+def to_dict(frame, into=dict):
+    return frame.apply(lambda x: ''.join(x)).to_dict(into=into)
