@@ -10,15 +10,17 @@ branches:
     only:
         - master
 
-before_install:
-    - pip install coverage
+install:
+    - pip install .
+    - pip install pycodestyle
     - pip install pytest
-    - pip install pytest-pep8
+    - pip install coverage
+    - pip install codecov
 
 script:
-    - py.test pandascharm.py --pep8
-    - coverage run -m py.test
-    - coverage report --include pandascharm.py -m
+    - pycodestyle pandascharm.py test_pandascharm.py setup.py
+    - coverage run -m pytest test_pandascharm.py
+    - coverage report -m pandascharm.py
 
 after_success:
   - codecov
