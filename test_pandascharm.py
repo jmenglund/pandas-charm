@@ -26,7 +26,9 @@ from pandascharm import (
     from_charmatrix,
     to_charmatrix,
     from_bioalignment,
-    to_bioalignment)
+    to_bioalignment,
+    from_dict,
+    to_dict)
 
 
 class TestAsCategorical():
@@ -194,3 +196,20 @@ class TestBioalignmentConversion():
     def test_invalid_alphabet(self):
         with pytest.raises(ValueError):
             to_bioalignment(self.dna_frame, alphabet='dna')
+
+
+class TestDictConversion():
+
+    dna_frame = pandas.DataFrame({
+        't1': ['T', 'C', 'C', 'A', 'A'],
+        't2': ['T', 'G', 'C', 'A', 'A'],
+        't3': ['T', 'G', '-', 'A', 'A']}, dtype='object')
+
+    dna_dict = {'t1': 'TCCAA', 't2': 'TGCAA', 't3': 'TG-AA'}
+
+    def test_from_dict(self):
+        assert_frame_equal(
+            from_dict(self.dna_dict, categorical=False), self.dna_frame)
+
+    def test_to_dict(self):
+        assert(to_dict(self.dna_frame) == self.dna_dict)
