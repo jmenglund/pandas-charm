@@ -1,15 +1,17 @@
 Changelog
 =========
 
-0.1.4
+0.2.0
 -----
 
-* Updates to ``README.rst``
-* Updates to ``release-checklist.rst``
+* Added functions ``from_dict`` and ``to_dict`` for casting from and to dictionaries.
+* Updated commands for Travis-CI.
+* Updates to ``README.rst``.
+* Updates to ``release-checklist.rst``.
 
-Release date: not released yet
+Release date: 2019-02-23
 
-`View commits <https://github.com/jmenglund/pandas-charm/compare/v0.1.3...v0.1.4>`_
+`View commits <https://github.com/jmenglund/pandas-charm/compare/v0.1.3...v0.2.0>`_
 
 
 0.1.3
