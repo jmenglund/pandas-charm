@@ -16,6 +16,8 @@ install:
     - pip install pytest
     - pip install coverage
     - pip install codecov
+    - pip install dendropy
+    - pip install biopython
 
 script:
     - pycodestyle pandascharm.py test_pandascharm.py setup.py
