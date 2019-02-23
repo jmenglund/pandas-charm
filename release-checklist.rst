@@ -8,13 +8,19 @@ Things to remember when making a new release of pandas-charm.
 
 #.  Make desirable changes to the code.
 
-#.  Run tests with PEP8 check and report coverage:
+#.  Check coding style against some of the conventions in PEP8:
 
     .. code-block:: none
 
-        $ py.test -v --pep8 pandascharm.py
-        $ coverage run -m py.test
-        $ coverage report --include pandascharm.py -m
+        $ pycodestyle *.py
+
+#.  Run tests and report coverage:
+
+    .. code-block:: none
+
+        $ pytest -v test_pandascharm.py
+        $ coverage run -m pytest test_pandascharm.py
+        $ coverage report -m pandascharm.py
 
 #.  Update the documentation in ``README.rst``.
 
