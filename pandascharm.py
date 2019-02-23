@@ -6,7 +6,7 @@ import pandas
 
 __author__ = 'Markus Englund'
 __license__ = 'MIT'
-__version__ = '0.1.3'
+__version__ = '0.2.0'
 
 
 def frame_as_categorical(frame, include_categories=None):
@@ -83,6 +83,15 @@ def from_charmatrix(charmatrix, categorical=True):
     return new_frame
 
 
+def from_dict(d, categorical=True):
+    d_seq_list = {k: list(v) for (k, v) in d.items()}
+    frame = pandas.DataFrame(d_seq_list)
+    if categorical:
+        return frame_as_categorical(frame)
+    else:
+        return frame
+
+
 def to_bioalignment(frame, alphabet='generic_alphabet'):
     """
     Convert a pandas DataFrame to a BioPython MultipleSeqAlignment.
@@ -150,3 +159,7 @@ def to_charmatrix(frame, data_type):
     taxon_names = list(frame.columns)
     charmatrix.taxon_namespace.sort(key=lambda x: taxon_names.index(x.label))
     return charmatrix
+
+
+def to_dict(frame, into=dict):
+    return frame.apply(lambda x: ''.join(x)).to_dict(into=into)

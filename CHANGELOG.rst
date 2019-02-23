@@ -1,6 +1,19 @@
 Changelog
 =========
 
+0.2.0
+-----
+
+* Added functions ``from_dict`` and ``to_dict`` for casting from and to dictionaries.
+* Updated commands for Travis-CI.
+* Updates to ``README.rst``.
+* Updates to ``release-checklist.rst``.
+
+Release date: 2019-02-23
+
+`View commits <https://github.com/jmenglund/pandas-charm/compare/v0.1.3...v0.2.0>`_
+
+
 0.1.3
 -----
 
@@ -11,24 +24,25 @@ Changelog
 * Added Travis-CI testing for Python 3.6.
 * List of included categories are now ignored in matrix conversions involving
   categorical data.
-* ``pytest-cov`` removed from *requirements.txt*.
-* Updates to *setup.py*.
-* Updates to *README.rst*.
-* Updates to *release-checklist.rst*.
+* ``pytest-cov`` removed from ``requirements.txt``.
+* Updates to ``setup.py``.
+* Updates to ``README.rst``.
+* Updates to ``release-checklist.rst``.
 
 Release date: 2017-08-25
 
 `View commits <https://github.com/jmenglund/pandas-charm/compare/v0.1.2...v0.1.3>`_
 
+
 0.1.2
 -----
 
 * Added Python versions for Travis-CI (3.3, 3.5)
-* Added ``pep8`` check to Travis-CI
-* Updates to *README.rst*
+* Added PEP8 check to Travis-CI
+* Updates to ``README.rst``
     - Fixed issue with one example not working (``pc.to_charmatrix()``)
     - Updated text in various places
-* Updates to *release-checklist.rst*
+* Updates to ``release-checklist.rst``
 
 Release date: 2016-08-08
 
@@ -39,8 +53,8 @@ Release date: 2016-08-08
 -----
 
 * Simplified builds with Travis-CI.
-* DOI badge added to the top of *README.rst*.
-* Information on how to cite ``pandas-charm`` added to *README.rst*.
+* DOI badge added to the top of ``README.rst``.
+* Information on how to cite pandas-charm added to ``README.rst``.
 
 Release date: 2016-07-05
 

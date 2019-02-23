@@ -3,32 +3,41 @@ Release checklist
 
 Things to remember when making a new release of pandas-charm.
 
-#.  Changes should be made to some branch other than master (a pull request should then be created before making the release).
-
-#.  Update the release (version) numbers in *setup.py* and *pandascharm.py*.
+#.  Changes should be made to some branch other than master (a pull request
+    should then be created before making the release).
 
 #.  Make desirable changes to the code.
 
-#.  Run tests with PEP8 check and report coverage:
+#.  Check coding style against some of the conventions in PEP8:
 
-    .. code-block::
+    .. code-block:: none
 
-        $ py.test -v --pep8 pandascharm.py
-        $ coverage run -m py.test
-        $ coverage report --include pandascharm.py -m
+        $ pycodestyle *.py
 
-#.  Update the documentation in *README.rst*.
+#.  Run tests and report coverage:
 
-#.  Update *CHANGELOG.rst*.
+    .. code-block:: none
+
+        $ pytest -v test_pandascharm.py
+        $ coverage run -m pytest test_pandascharm.py
+        $ coverage report -m pandascharm.py
+
+#.  Update the documentation in ``README.rst``.
+
+#.  Update ``CHANGELOG.rst`` and add a release date.
+
+#.  Update the release (version) number in ``setup.py`` and
+    ``pandascharm.py``. Use `Semantic Versioning <http://semver.org>`_.
 
 #.  Create pull request(s) with changes for the new release.
 
+#.  Create distributions and upload the files to
+    `PyPI <https://pypi.python.org/pypi>`_ with
+    `twine <https://github.com/pypa/twine>`_.
+
+    .. code-block:: none
+
+        $ python setup.py sdist bdist_wheel --universal
+        $ twine upload dist/*
+
 #.  Create the new release in GitHub.
-
-#.  Create distributions and upload the files to `PyPI <https://pypi.python.org/pypi>`_.
-
-    .. code-block::
-
-        $ python setup.py bdist_wheel --universal
-        $ python setup.py sdist
- 

@@ -8,7 +8,7 @@ from io import open
 
 setup(
     name='pandas-charm',
-    version='0.1.3',
+    version='0.2.0',
     description=(
         'A small Python library for getting character matrices '
         '(alignments) into and out of pandas'),
@@ -16,7 +16,7 @@ setup(
         join(dirname(__file__), 'README.rst'), encoding='utf-8').read(),
     packages=find_packages(exclude=['docs', 'tests*']),
     py_modules=['pandascharm'],
-    install_requires=['pandas>=0.16', 'numpy'],
+    install_requires=['pandas>=0.16'],
     extras_require={'testing': [
         'coverage', 'pytest', 'biopython', 'dendropy']},
     author='Markus Englund',
