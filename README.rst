@@ -248,7 +248,7 @@ pandas DataFrame to Python dictionary
     ...     't2': ['T', 'G', 'C', 'A', 'A'],
     ...     't3': ['T', 'G', '-', 'A', 'A']})
     >>> pc.to_dict(df)
-    ... {'t1': 'TCCAA', 't2': 'TGCAA', 't3': 'TG-AA'}
+    {'t1': 'TCCAA', 't2': 'TGCAA', 't3': 'TG-AA'}
 
 
 The name
