@@ -12,6 +12,7 @@ Convert between the following objects:
 
 * BioPython MultipleSeqAlignment <-> pandas DataFrame
 * DendroPy CharacterMatrix <-> pandas DataFrame
+* Python dictionary <-> pandas DataFrame
 
 The code has been tested with Python 2.7, 3.5 and 3.6.
 
@@ -54,22 +55,33 @@ Python path. See for example the environment management system
 Running the tests
 -----------------
 
-Testing is carried out with `pytest <http://pytest.org>`_. The following
-example shows how you can run the test suite and generate a coverage report
-with `coverage <https://coverage.readthedocs.io/>`_:
+Testing is carried out with `pytest <https://docs.pytest.org/>`_:
 
 .. code-block::
 
-    $ pip install pytest pytest-pep8 dendropy biopython
-    $ py.test -v --pep8
-    $ coverage run -m py.test
-    $ coverage report --include pandascharm.py
+    $ pytest -v test_pandascharm.py
+
+Test coverage can be calculated with `Coverage.py
+<https://coverage.readthedocs.io/>`_ using the following commands:
+
+.. code-block::
+
+    $ coverage run -m pytest
+    $ coverage report -m pandascharm.py
+
+The code follow style conventions in `PEP8
+<https://www.python.org/dev/peps/pep-0008/>`_, which can be checked
+with `pycodestyle <http://pycodestyle.pycqa.org>`_:
+
+.. code-block::
+
+    $ pycodestyle pandascharm.py test_pandascharm.py setup.py
 
 
 Usage
 -----
 
-The examples show how to use pandas-charm. The examples are
+The following examples show how to use pandas-charm. The examples are
 written with Python 3 code, but pandas-charm should work also with
 Python 2.7+. You need to install BioPython and/or DendroPy manually
 before you start:
@@ -200,6 +212,43 @@ pandas DataFrame to BioPython MultipleSeqAlignment
     TCCAA t1
     TGCAA t2
     TG-AA t3
+
+
+Python dictionary to pandas DataFrame
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: pycon
+
+    >>> import pandas as pd
+    >>> import pandascharm as pc
+    >>> d = {
+    ...     't1': 'TCCAA',
+    ...     't2': 'TGCAA',
+    ...     't3': 'TG-AA'
+    ... }
+    >>> df = pc.from_dict(d)
+    >>> df
+      t1 t2 t3
+    0  T  T  T
+    1  C  G  G
+    2  C  C  -
+    3  A  A  A
+    4  A  A  A
+
+
+pandas DataFrame to Python dictionary 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: pycon
+
+    >>> import pandas as pd
+    >>> import pandascharm as pc
+    >>> df = pd.DataFrame({
+    ...     't1': ['T', 'C', 'C', 'A', 'A'],
+    ...     't2': ['T', 'G', 'C', 'A', 'A'],
+    ...     't3': ['T', 'G', '-', 'A', 'A']})
+    >>> pc.to_dict(df)
+    ... {'t1': 'TCCAA', 't2': 'TGCAA', 't3': 'TG-AA'}
 
 
 The name
