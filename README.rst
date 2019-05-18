@@ -12,7 +12,7 @@ Convert between the following objects:
 
 * BioPython MultipleSeqAlignment <-> pandas DataFrame
 * DendroPy CharacterMatrix <-> pandas DataFrame
-* Python dictionary <-> pandas DataFrame
+* "Sequence dictionary" <-> pandas DataFrame
 
 The code has been tested with Python 2.7, 3.5 and 3.6.
 
@@ -214,8 +214,8 @@ pandas DataFrame to BioPython MultipleSeqAlignment
     TG-AA t3
 
 
-Python dictionary to pandas DataFrame
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"Sequence dictionary" to pandas DataFrame
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: pycon
 
@@ -226,7 +226,7 @@ Python dictionary to pandas DataFrame
     ...     't2': 'TGCAA',
     ...     't3': 'TG-AA'
     ... }
-    >>> df = pc.from_dict(d)
+    >>> df = pc.from_sequence_dict(d)
     >>> df
       t1 t2 t3
     0  T  T  T
@@ -236,8 +236,8 @@ Python dictionary to pandas DataFrame
     4  A  A  A
 
 
-pandas DataFrame to Python dictionary 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pandas DataFrame to "sequence dictionary"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: pycon
 
@@ -247,7 +247,7 @@ pandas DataFrame to Python dictionary
     ...     't1': ['T', 'C', 'C', 'A', 'A'],
     ...     't2': ['T', 'G', 'C', 'A', 'A'],
     ...     't3': ['T', 'G', '-', 'A', 'A']})
-    >>> pc.to_dict(df)
+    >>> pc.to_sequence_dict(df)
     {'t1': 'TCCAA', 't2': 'TGCAA', 't3': 'TG-AA'}
 
 
