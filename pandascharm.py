@@ -6,7 +6,7 @@ import pandas
 
 __author__ = 'Markus Englund'
 __license__ = 'MIT'
-__version__ = '0.2.0'
+__version__ = '0.3.0'
 
 
 def frame_as_categorical(frame, include_categories=None):

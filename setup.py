@@ -8,7 +8,7 @@ from io import open
 
 setup(
     name='pandas-charm',
-    version='0.2.0',
+    version='0.3.0',
     description=(
         'A small Python library for getting character matrices '
         '(alignments) into and out of pandas'),
