@@ -27,8 +27,8 @@ from pandascharm import (
     to_charmatrix,
     from_bioalignment,
     to_bioalignment,
-    from_dict,
-    to_dict)
+    from_sequence_dict,
+    to_sequence_dict)
 
 
 class TestAsCategorical():
@@ -198,18 +198,28 @@ class TestBioalignmentConversion():
             to_bioalignment(self.dna_frame, alphabet='dna')
 
 
-class TestDictConversion():
+class TestSequenceDictConversion():
 
     dna_frame = pandas.DataFrame({
         't1': ['T', 'C', 'C', 'A', 'A'],
         't2': ['T', 'G', 'C', 'A', 'A'],
         't3': ['T', 'G', '-', 'A', 'A']}, dtype='object')
 
+    dna_frame_nan = pandas.DataFrame({
+        't1': ['T', 'C', 'C', 'A', 'A'],
+        't2': ['T', 'G', 'C', 'A', 'A'],
+        't3': ['T', 'G', '-', 'A', numpy.nan]}, dtype='object')
+
     dna_dict = {'t1': 'TCCAA', 't2': 'TGCAA', 't3': 'TG-AA'}
 
-    def test_from_dict(self):
+    def test_from_sequence_dict(self):
         assert_frame_equal(
-            from_dict(self.dna_dict, categorical=False), self.dna_frame)
+            from_sequence_dict(self.dna_dict, categorical=False),
+            self.dna_frame)
 
-    def test_to_dict(self):
-        assert(to_dict(self.dna_frame) == self.dna_dict)
+    def test_to_sequence_dict(self):
+        assert(to_sequence_dict(self.dna_frame) == self.dna_dict)
+
+    def test_do_sequence_dict_nan(self):
+        with pytest.raises(TypeError):
+            to_sequence_dict(self.dna_frame_nan)

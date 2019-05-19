@@ -1,6 +1,21 @@
 Changelog
 =========
 
+
+0.3.0
+-----
+
+* Functions ``from_dict`` renamed ``from_sequence_dict``, and ``to_dict`` 
+  renamed ``to_sequence_dict``.
+* Added tests for the functions ``from_sequence_dict`` and ``to_sequence_dict``.
+* Installation now requires pandas >= 0.21.
+
+Release date: 2019-05-19
+
+`View commits <https://github.com/jmenglund/pandas-charm/compare/v0.2.0...v0.3.0>`_
+
+
+
 0.2.0
 -----
 

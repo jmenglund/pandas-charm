@@ -6,7 +6,7 @@ import pandas
 
 __author__ = 'Markus Englund'
 __license__ = 'MIT'
-__version__ = '0.2.0'
+__version__ = '0.3.0'
 
 
 def frame_as_categorical(frame, include_categories=None):
@@ -83,7 +83,16 @@ def from_charmatrix(charmatrix, categorical=True):
     return new_frame
 
 
-def from_dict(d, categorical=True):
+def from_sequence_dict(d, categorical=True):
+    """
+    Convert a dict with sequences as strings to a pandas DataFrame.
+
+    Parameters
+    ----------
+    d : dict
+    categorical : bool (default: True)
+        If True, the result will be returned as a categorical frame.
+    """
     d_seq_list = {k: list(v) for (k, v) in d.items()}
     frame = pandas.DataFrame(d_seq_list)
     if categorical:
@@ -161,5 +170,6 @@ def to_charmatrix(frame, data_type):
     return charmatrix
 
 
-def to_dict(frame, into=dict):
+def to_sequence_dict(frame, into=dict):
+    """Convert a pandas DataFrame to a dict with sequences as strings."""
     return frame.apply(lambda x: ''.join(x)).to_dict(into=into)
